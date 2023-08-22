@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  /*background-color: #f1f1f1;*/
+  width: 90px;
+  margin: 10px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 12px;
+  border-right: 1px solid white;
+
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+
+#currentWeather {
+
+  padding: 1px;
+  font-size: 30px;
+  text-align: center;
+}
