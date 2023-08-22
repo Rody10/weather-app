@@ -118,8 +118,8 @@ function CurrentWeather(props) {
 
   return (
     <div id="currentWeather">
-      <p style={{ fontSize: '30px'}}>{cityName}, {countryName}</p>
-      <p style={{ fontSize: '50px', fontWeight: 'bold' } }>{currentTemp.toFixed(1)}°C</p>
+      <p style={{ fontSize: '40px' }}>{cityName}, {countryName}</p>
+      <p>{currentTemp.toFixed(1)}°C</p>
       <p style={{ fontSize: '20px', fontWeight: 'bold' }}>Weather condition: <span style={{ fontWeight: 'normal' }}>{weatherCondition}</span></p>
       <p style={{ fontSize: '20px', fontWeight: 'bold' }}>Wind speed: <span style={{ fontWeight: 'normal' }}>{metersPerSecondToKilometersPerHour(windSpeed)} km/h</span></p>
       <p style={{ fontSize: '20px', fontWeight: 'bold' }}>Wind direction: <span style={{ fontWeight: 'normal' }}>{degreesToCardinal(windDirection)} ({windDirection})°</span></p>
