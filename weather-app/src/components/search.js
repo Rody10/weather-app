@@ -6,7 +6,9 @@ const Search = ({ onSearchChange }) => {
     const [errorMessage, setErrorMessage] = useState("");
 
     const getLocationData = (inputValue) => {
-        fetch(`${API.geocodingURLBase}search?name=${inputValue}&count=1&language=en&format=json`)
+
+        const lowercaseInput = inputValue.toLowerCase(); // Convert input to lowercase for the API request - making search not to be case sensitive
+        fetch(`${API.geocodingURLBase}search?name=${lowercaseInput}&count=1&language=en&format=json`)
         .then(response => {
             if (!response.ok) {
                 throw new Error("City not found");
